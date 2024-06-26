@@ -10,9 +10,6 @@ body {
   background-color: #c5c5c5;
 }
 
-.linear-gradient-hero {
-  background: linear-gradient(90deg, #417fb4 0%, #25a192 50.91%);
-}
 .angled-div {
   position: relative;
   clip-path: polygon(0 0, 100% 0, 70% 100%, 0% 100%);
@@ -20,14 +17,6 @@ body {
 .parallelogram {
   transform: skew(-20deg);
 }
-.skew-fix {
-  display: inline-block;
-  transform: skew(20deg);
-}
-.linear-gradient-keynote {
-  background: linear-gradient(180deg, #25a192 0%, #4180b4 100%);
-}
-
 .parallelogram-div-gradient {
   transform: skew(-15deg);
 }
@@ -35,12 +24,32 @@ body {
   transform: skew(-3deg);
   clip-path: polygon(32% 0, 100% 0, 83% 100%, 6% 100%);
 }
+.skew-fix {
+  display: inline-block;
+  transform: skew(20deg);
+}
 .skew-fix-div {
   display: inline-block;
   transform: skew(3deg);
 }
+.linear-gradient-hero {
+  background: linear-gradient(90deg, #417fb4 0%, #25a192 50.91%);
+}
+.linear-gradient-keynote {
+  background: linear-gradient(180deg, #25a192 0%, #4180b4 100%);
+}
 .linear-gradient-button {
   background: linear-gradient(90deg, #4180b4 0%, #289d96 100%);
 }
+.liner-gradient-about {
+  background: linear-gradient(114.4deg, #4180b4 0.7%, #25a192 98.79%);
+}
+@font-face {
+  font-family: "Metropolis";
+  src: url("/assets/fonts/metropolis.regular.woff2"),
+    /* WOFF2 format */ url("/assets/fonts/metropolis.regular.woff");
+}
 
-/* Ensure the parent div is positioned relative */
+.metropolis-font {
+  font-family: "Metropolis", sans-serif;
+}

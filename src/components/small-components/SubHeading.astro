@@ -1,7 +1,9 @@
 ---
-const { title } = Astro.props;
+const { title, white } = Astro.props;
 ---
 
-<p class="uppercase font-semibold 2xl:text-[52px] text-[#309BD6]">
+<p
+  class={`uppercase font-semibold 2xl:text-[52px] ${white ? "text-white" : "text-[#309BD6]"}`}
+>
   {title}
 </p>
