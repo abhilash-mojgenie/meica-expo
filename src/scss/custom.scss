@@ -24,3 +24,23 @@ body {
   display: inline-block;
   transform: skew(20deg);
 }
+.linear-gradient-keynote {
+  background: linear-gradient(180deg, #25a192 0%, #4180b4 100%);
+}
+
+.parallelogram-div-gradient {
+  transform: skew(-15deg);
+}
+.parallelogram-div {
+  transform: skew(-3deg);
+  clip-path: polygon(32% 0, 100% 0, 83% 100%, 6% 100%);
+}
+.skew-fix-div {
+  display: inline-block;
+  transform: skew(3deg);
+}
+.linear-gradient-button {
+  background: linear-gradient(90deg, #4180b4 0%, #289d96 100%);
+}
+
+/* Ensure the parent div is positioned relative */

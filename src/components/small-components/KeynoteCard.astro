@@ -1,0 +1,29 @@
+---
+const { src, name, pos } = Astro.props;
+---
+
+<div class="flex">
+  <div class="relative flex items-center">
+    <div>
+      <div class="my-[65px] parallelogram-div">
+        <img
+          src={src}
+          class="2xl:w-[265px] 2xl:h-[258px] object-cover skey-fix-div"
+          alt=""
+        />
+      </div>
+      <div
+        class="w-[40px] h-[388px] linear-gradient-keynote absolute top-0 left-[226px] parallelogram-div-gradient"
+      >
+      </div>
+    </div>
+    <div class="flex flex-col gap-[20px] pl-[45px]">
+      <p class="text-[#2B3D4F] font-semibold text-[36px]">
+        {name}
+      </p>
+      <p class="max-w-[506px] text-[26px]">
+        {pos}
+      </p>
+    </div>
+  </div>
+</div>
