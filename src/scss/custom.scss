@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+body {
+  font-family: "Outfit", sans-serif;
+}
+.indicator-active {
+  background-color: white;
+}
+.indicator-inactive {
+  background-color: #c5c5c5;
+}
+
+.linear-gradient-hero {
+  background: linear-gradient(90deg, #417fb4 0%, #25a192 50.91%);
+}
+.angled-div {
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 70% 100%, 0% 100%);
+}
+.parallelogram {
+  transform: skew(-20deg);
+}
+.skew-fix {
+  display: inline-block;
+  transform: skew(20deg);
+}

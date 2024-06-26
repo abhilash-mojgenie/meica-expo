@@ -1,0 +1,42 @@
+---
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+import "../scss/custom.scss";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Astro description" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+    <!-- <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"
+    ></script> -->
+  </head>
+  <body>
+    <div class="w-full flex justify-between">
+      <a href="">
+        <img
+          src="/assets/img/png/meica-logo.png"
+          class="h-[81px] w-[232px] ml-[80px] mt-[34px] object-cover"
+          alt=""
+        />
+      </a>
+      <a href="">
+        <img
+          src="/assets/img/png/principal-sponsor.png"
+          class="h-[100px] w-[475px] object-cover mt-[25px] mr-[50px]"
+          alt=""
+        />
+      </a>
+    </div>
+    <slot />
+  </body>
+</html>

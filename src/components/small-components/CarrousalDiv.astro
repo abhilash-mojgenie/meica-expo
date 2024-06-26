@@ -1,0 +1,45 @@
+---
+const { bg, title, desc, btn1, btn2 } = Astro.props;
+---
+
+<div class={`${bg} h-full w-full bg-no-repeat object-cover bg-right`}>
+  <div
+    class="linear-gradient-hero angled-div h-full lg:max-w-[550px] xl:max-w-[750px] 2xl:max-w-[1004px]"
+  >
+    <div
+      class="2xl:pl-[79px] 2xl:pr-[80px] xl:px-[50px] 2xl:pt-[125px] xl:pt-[50px] lg:px-[30px] lg:pt-[80px]"
+    >
+      <p
+        class="text-white lg:text-[23px] xl:text-[30px] 2xl:text-[46px] font-semibold max-w-[810px]"
+      >
+        {title}
+      </p>
+      <p
+        class="font-normal lg:text-[15px] xl:text-[17px] lg:py-[25px] 2xl:text-[20px] 2xl:pb-[56px] 2xl:pt-[38px] lg:max-w-[400px] xl:max-w-[500px] 2xl:max-w-[750px] text-white"
+      >
+        {desc}
+      </p>
+      <div class="flex gap-[20px]">
+        <button
+          class="2xl:pl-[87px] xl:px-[30px] 2xl:pr-[83px] 2xl:py-[9px] lg:px-[20px] lg:py-[5px] bg-white parallelogram"
+        >
+          <span
+            class="2xl:text-[22px] xl:text-[18px] lg:text-[16px] text-[#309BD6] skew-fix uppercase"
+            >{btn1}</span
+          >
+        </button>
+
+        <button
+          class="2xl:pl-[87px] 2xl:pr-[83px] xl:px-[30px] 2xl:py-[9px] border border-white parallelogram lg:px-[20px] lg:py-[5px]"
+        >
+          <span
+            class="2xl:text-[22px] xl:text-[18px] lg:text-[16px] text-white skew-fix uppercase"
+          >
+            {btn2}
+          </span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- bg-[url('/assets/img/png/meica-hero.png')] -->
