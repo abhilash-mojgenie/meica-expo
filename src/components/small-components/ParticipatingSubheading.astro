@@ -1,8 +1,13 @@
 ---
-const { title } = Astro.props;
+const { title, black } = Astro.props;
 ---
 
 <div class="flex items-end gap-[15px]">
-  <p class="text-[34px] font-semibold text-white">{title}</p>
-  <hr class="flex-1 b h-[2px] border-[#AACEF2] mb-[13px]" />
+  <p class={`text-[36px] font-semibold ${black ? "text-black" : "text-white"}`}>
+    {title}
+  </p>
+  <hr
+    class={`flex-1 b h-[2px] ${black ? "border-black" : "border-[#AACEF2]"}
+    mb-[13px]`}
+  />
 </div>
