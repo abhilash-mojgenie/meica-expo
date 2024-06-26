@@ -4,7 +4,11 @@ const { src, name, pos, com } = Astro.props;
 
 <div class="max-w-[353px] w-[353px] border-avatar-panellist rounded-t-[20px]">
   <div class="w-[348px]">
-    <img src={src} class="object-cover" alt="" />
+    <img
+      src={src}
+      class="object-cover w-full h-[278px] rounded-t-[20px]"
+      alt=""
+    />
   </div>
   <div class="bg-white rounded-b-[20px]">
     <div class="flex flex-col items-center pt-[58px] pb-[75px]">
