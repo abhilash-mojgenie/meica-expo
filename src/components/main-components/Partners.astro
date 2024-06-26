@@ -1,0 +1,62 @@
+---
+import SubHeading from "../small-components/SubHeading.astro";
+import ParticipatingSubheading from "../small-components/ParticipatingSubheading.astro";
+import GoldSponsorCard from "../small-components/GoldSponsorCard.astro";
+import SilverSponsorCard from "../small-components/SilverSponsorCard.astro";
+---
+
+<div class="pb-[100px] pt-[50px] px-[80px] bg-[#2B3D4F] mt-[50px]">
+  <SubHeading title="Participating Companies" white />
+
+  <div class="mt-[72px]">
+    <ParticipatingSubheading title="Principle Sponsor" />
+
+    <div class="flex justify-center my-[85px]">
+      <div
+        class="bg-white rounded-[20px] w-[576px] h-[215px] flex justify-center items-center"
+      >
+        <img src="/assets/img/png/partner-1.png" class="object-cover" alt="" />
+      </div>
+    </div>
+  </div>
+
+  <div class="">
+    <ParticipatingSubheading title="Gold Sponsor" />
+
+    <div class="my-[72px] grid grid-cols-3 gap-[168px]">
+      <GoldSponsorCard src="/assets/img/png/partner-2.png" />
+      <GoldSponsorCard src="/assets/img/png/partner-2.png" />
+
+      <GoldSponsorCard src="/assets/img/png/partner-2.png" />
+    </div>
+  </div>
+
+  <div class="">
+    <ParticipatingSubheading title="Silver Sponsor" />
+
+    <div class="my-[72px] grid grid-cols-4 gap-[23px]">
+      <SilverSponsorCard src="/assets/img/png/partner-3.png" />
+      <SilverSponsorCard src="/assets/img/png/partner-3.png" />
+
+      <SilverSponsorCard src="/assets/img/png/partner-3.png" />
+      <SilverSponsorCard src="/assets/img/png/partner-3.png" />
+    </div>
+  </div>
+
+  <div class="">
+    <ParticipatingSubheading title="Exhibitors" />
+
+    <div class="mt-[72px] grid grid-cols-4 gap-[23px]">
+      <SilverSponsorCard src="/assets/img/png/partner-4.png" />
+      <SilverSponsorCard src="/assets/img/png/partner-4.png" />
+
+      <SilverSponsorCard src="/assets/img/png/partner-4.png" />
+      <SilverSponsorCard src="/assets/img/png/partner-4.png" />
+      <SilverSponsorCard src="/assets/img/png/partner-4.png" />
+      <SilverSponsorCard src="/assets/img/png/partner-4.png" />
+
+      <SilverSponsorCard src="/assets/img/png/partner-4.png" />
+      <SilverSponsorCard src="/assets/img/png/partner-4.png" />
+    </div>
+  </div>
+</div>
