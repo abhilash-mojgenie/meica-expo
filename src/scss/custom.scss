@@ -53,3 +53,25 @@ body {
 .metropolis-font {
   font-family: "Metropolis", sans-serif;
 }
+
+.border-avatar-panellist {
+  position: relative;
+  border-radius: 20px; /* Apply the desired border radius */
+  background-clip: padding-box; /* Ensure the background clips correctly */
+}
+
+.border-avatar-panellist::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 20px; /* Match the border radius */
+  padding: 5px; /* Adjust to match the border width */
+  background: linear-gradient(180deg, #25a192 0%, #4081b3 100%);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}

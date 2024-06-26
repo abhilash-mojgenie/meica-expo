@@ -1,0 +1,16 @@
+---
+const { src, name, pos, com } = Astro.props;
+---
+
+<div class="max-w-[353px] w-[353px] border-avatar-panellist rounded-t-[20px]">
+  <div class="w-[348px]">
+    <img src={src} class="object-cover" alt="" />
+  </div>
+  <div class="bg-white rounded-b-[20px]">
+    <div class="flex flex-col items-center pt-[58px] pb-[75px]">
+      <p class="text-[#2B3D4F] font-semibold text-[36px]">{name}</p>
+      <p class="mt-[1px] text-[22px]">{pos}</p>
+      <p class="font-semibold text-[22px]">{com}</p>
+    </div>
+  </div>
+</div>
