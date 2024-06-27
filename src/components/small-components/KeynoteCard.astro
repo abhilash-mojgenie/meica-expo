@@ -3,61 +3,55 @@ const { src, name, pos, id } = Astro.props;
 ---
 
 <div class="flex">
-    <div class="relative flex items-center">
-        <div>
-            <svg
-                width="328"
-                height="389"
-                viewBox="0 0 328 389"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-            >
-                <path
-                    d="M194.973 388.123L152.601 387.854L287.024 1.14147L327.999 1.41554L194.973 388.123Z"
-                    fill="url(#paint0_linear_3_2)"></path>
-                <path
-                    d="M0 324H174.984L265 66H91.6984L0 324Z"
-                    fill=`url(#pattern${id})`></path>
-                <defs>
-                    <pattern
-                        id=`pattern${id}`
-                        patternContentUnits="objectBoundingBox"
-                        width="1"
-                        height="1"
-                    >
-                        <use
-                            xlink:href=`#image${id}`
-                            transform="matrix(0.00581395 0 0 0.0059717 0 -0.264377)"
-                        ></use>
-                    </pattern>
-                    <linearGradient
-                        id="paint0_linear_3_2"
-                        x1="241.918"
-                        y1="0.859758"
-                        x2="239.415"
-                        y2="388.41"
-                        gradientUnits="userSpaceOnUse"
-                    >
-                        <stop stop-color="#25A192"></stop>
-                        <stop offset="1" stop-color="#4180B4"></stop>
-                    </linearGradient>
-                    <image
-                        id=`image${id}`
-                        width="172"
-                        height="256"
-                        xlink:href={src}
-                    />
-                </defs>
-            </svg>
-        </div>
-        <div class="flex flex-col gap-[20px] pl-[45px]">
-            <p class="text-[#2B3D4F] font-semibold text-[36px]">
-                {name}
-            </p>
-            <p class="max-w-[506px] text-[26px]">
-                {pos}
-            </p>
-        </div>
+  <div class="relative flex items-center max-w-[664px]">
+    <div>
+      <svg
+        class="2xl:h-[389px] 2xl:w-[328px] xl:h-[324px] lg:w-[230px] xl:w-[274px]"
+        viewBox="0 0 328 389"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+      >
+        <path
+          d="M194.973 388.123L152.601 387.854L287.024 1.14147L327.999 1.41554L194.973 388.123Z"
+          fill="url(#paint0_linear_3_2)"></path>
+        <path d="M0 324H174.984L265 66H91.6984L0 324Z" fill=`url(#pattern${id})`
+        ></path>
+        <defs>
+          <pattern
+            id=`pattern${id}`
+            patternContentUnits="objectBoundingBox"
+            width="1"
+            height="1"
+          >
+            <use
+              xlink:href=`#image${id}`
+              transform="matrix(0.00581395 0 0 0.0059717 0 -0.264377)"></use>
+          </pattern>
+          <linearGradient
+            id="paint0_linear_3_2"
+            x1="241.918"
+            y1="0.859758"
+            x2="239.415"
+            y2="388.41"
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop stop-color="#25A192"></stop>
+            <stop offset="1" stop-color="#4180B4"></stop>
+          </linearGradient>
+          <image id=`image${id}` width="172" height="256" xlink:href={src} />
+        </defs>
+      </svg>
     </div>
+    <div
+      class="flex flex-col gap-[9px] 2xl:gap-[20px] lg:pl-[10px] xl:pl-0 xl:ml-[-15px] 2xl:pl-[45px]"
+    >
+      <p class="text-[#2B3D4F] font-semibold lg:text-[20px] xl:text-[35px]">
+        {name}
+      </p>
+      <p class="2xl:max-w-[506px] text-[18px] xl:text-[24px] 2xl:text-[26px]">
+        {pos}
+      </p>
+    </div>
+  </div>
 </div>
