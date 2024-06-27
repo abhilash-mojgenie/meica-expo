@@ -2,49 +2,51 @@
 const { bg, title, desc, btn1, btn2 } = Astro.props;
 ---
 
-<div class={`${bg} h-full w-full bg-no-repeat object-cover bg-right`}>
+<div class={`${bg} h-full w-full bg-no-repeat object-cover bg-right  `}>
+  <div
+    class="linear-gradient-hero angled-div h-full lg:max-w-[580px] xl:max-w-[825px] 2xl:max-w-[1054px]"
+  >
     <div
-        class="linear-gradient-hero angled-div h-full lg:max-w-[550px] xl:max-w-[750px] 2xl:max-w-[1004px]"
+      class="2xl:pl-[79px] 2xl:pr-[80px] xl:px-[32px] 2xl:pt-[70px] xl:pt-[94px] lg:px-[30px] lg:pt-[80px]"
     >
-        <div
-            class="2xl:pl-[79px] 2xl:pr-[80px] xl:px-[50px] 2xl:pt-[125px] xl:pt-[50px] lg:px-[30px] lg:pt-[80px]"
+      <p
+        class="text-white lg:text-[23px] xl:text-[38px] 2xl:text-[46px] font-semibold max-w-[810px]"
+      >
+        {title}
+      </p>
+      <p
+        class="font-light metropolis-font lg:text-[15px] xl:text-[17px] lg:pt-[25px] lg:pb-[40px] xl:pt-[32px] xl:pb-[52px] 2xl:text-[20px] 2xl:pb-[56px] 2xl:pt-[38px] lg:max-w-[440px] xl:max-w-[655px] 2xl:max-w-[750px] text-white"
+      >
+        {desc}
+      </p>
+      <div
+        class="flex gap-[20px] lg:px-[20px] xl:pl-[34px] xl:pr-[54px] 2xl:pl-0 xl:pb-[120px] 2xl:pb-0"
+      >
+        <button
+          class="2xl:pl-[87px] text-center xl:px-[60px] 2xl:pr-[83px] 2xl:py-[9px] lg:px-[20px] lg:py-[7px] border border-white bg-white parallelogram hover:bg-transparent group relative inline-flex items-center justify-start overflow-hidden"
         >
-            <p
-                class="text-white lg:text-[23px] xl:text-[30px] 2xl:text-[46px] font-semibold max-w-[810px]"
-            >
-                {title}
-            </p>
-            <p
-                class="font-normal lg:text-[15px] xl:text-[17px] lg:py-[25px] 2xl:text-[20px] 2xl:pb-[56px] 2xl:pt-[38px] lg:max-w-[400px] xl:max-w-[500px] 2xl:max-w-[750px] text-white"
-            >
-                {desc}
-            </p>
-            <div class="flex gap-[20px]">
-                <button
-                    class="2xl:pl-[87px] xl:px-[30px] 2xl:pr-[83px] 2xl:py-[9px] lg:px-[20px] lg:py-[5px] border border-white bg-white parallelogram hover:bg-transparent group relative inline-flex items-center justify-start overflow-hidden"
-                >
-                    <span
-                        class="w-full h-48 rounded bg-white absolute bottom-[-40px] right-0 translate-x-full ease-out duration-700 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"
-                    ></span>
-                    <span
-                        class="2xl:text-[22px] xl:text-[18px] lg:text-[16px] text-[#309BD6] skew-fix uppercase group-hover:text-[#309BD6] transition-colors duration-700 ease-in-out"
-                        >{btn1}</span
-                    >
-                </button>
+          <span
+            class="w-full h-48 rounded bg-white absolute bottom-[-40px] right-0 translate-x-full ease-out duration-700 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"
+          ></span>
+          <span
+            class="2xl:text-[22px] metropolis-font xl:text-[18px] lg:text-[14px] text-[#309BD6] skew-fix uppercase group-hover:text-[#309BD6] transition-colors duration-700 ease-in-out"
+            >{btn1}</span
+          >
+        </button>
 
-                <button
-                    class="2xl:pl-[87px] xl:px-[30px] 2xl:pr-[83px] 2xl:py-[9px] lg:px-[20px] lg:py-[5px] border border-white bg-transparent parallelogram hover:bg-transparent group relative inline-flex items-center justify-start overflow-hidden"
-                >
-                    <span
-                        class="w-full h-48 rounded bg-white absolute bottom-[-40px] left-0 translate-x-full ease-out duration-500 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"
-                    ></span>
-                    <span
-                        class="2xl:text-[22px] xl:text-[18px] lg:text-[16px] text-white skew-fix uppercase group-hover:text-[#309BD6] transition-colors duration-700 ease-in-out"
-                        >{btn2}</span
-                    >
-                </button>
-            </div>
-        </div>
+        <button
+          class="2xl:pl-[87px] text-center xl:px-[60px] 2xl:pr-[83px] 2xl:py-[9px] lg:px-[20px] lg:py-[7px] border border-white bg-transparent parallelogram hover:bg-transparent group relative inline-flex items-center justify-start overflow-hidden"
+        >
+          <span
+            class="w-full h-48 rounded bg-white absolute bottom-[-40px] left-0 translate-x-full ease-out duration-500 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"
+          ></span>
+          <span
+            class="2xl:text-[22px] metropolis-font xl:text-[18px] lg:text-[14px] text-white skew-fix uppercase group-hover:text-[#309BD6] transition-colors duration-700 ease-in-out"
+            >{btn2}</span
+          >
+        </button>
+      </div>
     </div>
+  </div>
 </div>
 <!-- bg-[url('/assets/img/png/meica-hero.png')] -->
