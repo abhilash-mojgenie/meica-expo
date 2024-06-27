@@ -4,6 +4,7 @@ interface Props {
 }
 
 const { title } = Astro.props;
+import Footer from "../components/main-components/Footer.astro";
 import "../scss/custom.scss";
 ---
 
@@ -38,5 +39,6 @@ import "../scss/custom.scss";
       </a>
     </div>
     <slot />
+    <Footer />
   </body>
 </html>
