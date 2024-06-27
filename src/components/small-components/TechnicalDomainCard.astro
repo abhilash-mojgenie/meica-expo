@@ -3,13 +3,19 @@ const { src, title } = Astro.props;
 ---
 
 <div class="">
-  <div class="w-[488px] h-[435px] relative rounded-[20px] mb-[176px]">
-    <img src={src} class="w-[488px] h-[435px] rounded-[20px]" alt="" />
+  <div
+    class="xl:w-[408px] w-full relative rounded-[20px] mb-[90px] xl:mb-[176px]"
+  >
+    <img
+      src={src}
+      class="xl:w-[408px] w-full h-[435px] rounded-[20px] object-cover"
+      alt=""
+    />
     <div
-      class="border border-[#14D8C6] rounded-tr-[20px] w-[458px] bg-[#14D8C6] absolute top-[383px] left-0"
+      class="border border-[#14D8C6] rounded-tr-[20px] w-[425px] xl:w-[375px] bg-[#14D8C6] absolute top-[383px] left-0"
     >
       <p
-        class="font-semibold text-[34px] text-white pl-[28px] pt-[19px] pb-[23px]"
+        class="font-semibold text-[28px] text-white pl-[28px] pt-[26px] pb-[32px]"
       >
         {title}
       </p>

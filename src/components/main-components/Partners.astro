@@ -11,13 +11,13 @@ import SilverSponsorCard from "../small-components/SilverSponsorCard.astro";
   <div class="mt-[72px]">
     <ParticipatingSubheading title="Principle Sponsor" />
 
-    <div class="flex justify-center my-[85px]">
+    <div class="flex justify-center lg:my-[45px] 2xl:my-[85px]">
       <div
-        class="bg-white rounded-[20px] w-[576px] h-[215px] flex justify-center items-center border-sponsor"
+        class="bg-white rounded-[20px] xl:w-[576px] xl:h-[215px] flex justify-center items-center border-sponsor"
       >
         <img
           src="/assets/img/partners/petroleum-oman.png"
-          class="object-cover"
+          class="object-cover rounded-[20px]"
           alt=""
         />
       </div>
@@ -27,7 +27,9 @@ import SilverSponsorCard from "../small-components/SilverSponsorCard.astro";
   <div class="">
     <ParticipatingSubheading title="Gold Sponsor" />
 
-    <div class="my-[72px] grid grid-cols-3 gap-[168px]">
+    <div
+      class="my-[72px] grid grid-cols-3 lg:gap-[50px] xl:gap-[100px] 2xl:gap-[168px]"
+    >
       <GoldSponsorCard src="/assets/img/partners/hitachi.png" />
       <GoldSponsorCard src="/assets/img/partners/honey-well.png" />
 

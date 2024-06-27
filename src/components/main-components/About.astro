@@ -2,11 +2,20 @@
 import SubHeading from "../small-components/SubHeading.astro";
 ---
 
-<div class="py-[100px] px-[80px] liner-gradient-about relative">
-  <div class="flex justify-between z-10">
+<div
+  class="xl:py-[100px] lg:py-[50px] lg:px-[20px] xl:px-[42px] 2xl:px-[50px] liner-gradient-about relative"
+>
+  <div class="xl:hidden text-center mb-[20px]">
+    <SubHeading title="About COnference" white />
+  </div>
+  <div
+    class="flex flex-col-reverse gap-[50px] xl:gap-[50px] xl:flex-row 2xl:gap-[140px] z-10"
+  >
     <div class="relative z-10">
-      <SubHeading title="About COnference" white />
-      <div class="mt-[50px] max-w-[685px] z-10">
+      <div class="hidden xl:block">
+        <SubHeading title="About COnference" white />
+      </div>
+      <div class="xl:mt-[50px] xl:max-w-[628px] 2xl:max-w-[685px] z-10">
         <p class="text-[22px] text-white mb-[40px] metropolis-font">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
@@ -34,10 +43,10 @@ import SubHeading from "../small-components/SubHeading.astro";
         </p>
       </div>
     </div>
-    <div>
+    <div class="z-10">
       <img
         src="/assets/img/png/meica-hero.png"
-        class="h-[989px] w-[768px] object-cover"
+        class="xl:w-[589px] 2xl:w-[768px] object-cover lg:h-[650px] xl:h-full object-right z-10 lg:w-full"
         alt=""
       />
     </div>
@@ -45,7 +54,7 @@ import SubHeading from "../small-components/SubHeading.astro";
   <div class="-z-10">
     <img
       src="/assets/img/svg/pattern-about.svg"
-      class="absolute left-0 bottom-0"
+      class="absolute left-0 bottom-0 h-full"
       alt=""
     />
   </div>
