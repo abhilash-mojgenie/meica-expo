@@ -3,12 +3,12 @@
 body {
   font-family: "Outfit", sans-serif;
 }
-.indicator-active {
-  background-color: white;
-}
-.indicator-inactive {
-  background-color: #c5c5c5;
-}
+// .indicator-active {
+//   background-color: white;
+// }
+// .indicator-inactive {
+//   background-color: #c5c5c5;
+// }
 
 .angled-div {
   position: relative;
@@ -109,4 +109,21 @@ body {
     rgba(37, 161, 146, 0.83),
     rgba(37, 161, 146, 0.83)
   );
+}
+.custom-bg-gradient-1 {
+  background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
+}
+.custom-bg-gradient-2 {
+  background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.15) 0%,
+      rgba(0, 0, 0, 0.15) 100%
+    ),
+    radial-gradient(
+        at top center,
+        rgba(255, 255, 255, 0.4) 0%,
+        rgba(0, 0, 0, 0.4) 120%
+      )
+      #989898;
+  background-blend-mode: multiply, multiply;
 }

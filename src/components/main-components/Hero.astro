@@ -19,34 +19,29 @@ import CarrousalDiv from "../small-components/CarrousalDiv.astro";
         desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et"
         btn1="Register now"
         btn2="book a stand"
+        gradient="linear-gradient-hero"
       />
     </div>
     <!-- Item 2 -->
     <div class="h-full w-full duration-700 ease-in-out" data-carousel-item>
-      <div class="bg-red-500">
-        <p class="text-white">text</p>
-      </div>
+      <CarrousalDiv
+        bg="bg-[url('/assets/img/png/meica-hero.png')]"
+        title="INSTRUMENTATION, CYBERSECURITY & AUTOMATION EXPO"
+        desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et"
+        btn1="Register now"
+        btn2="book a stand"
+        gradient="custom-bg-gradient-1"
+      />
     </div>
     <!-- Item 3 -->
     <div class="h-full w-full duration-700 ease-in-out" data-carousel-item>
-      <div class="bg-blue-500">
-        <p class="text-white">text</p>
-      </div>
-    </div>
-    <!-- Item 4 -->
-    <div class="hidden duration-700 ease-in-out" data-carousel-item>
-      <img
-        src="/docs/images/carousel/carousel-4.svg"
-        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-        alt="..."
-      />
-    </div>
-    <!-- Item 5 -->
-    <div class="hidden duration-700 ease-in-out" data-carousel-item>
-      <img
-        src="/docs/images/carousel/carousel-5.svg"
-        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-        alt="..."
+      <CarrousalDiv
+        bg="bg-[url('/assets/img/png/meica-hero.png')]"
+        title="INSTRUMENTATION, CYBERSECURITY & AUTOMATION EXPO"
+        desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et"
+        btn1="Register now"
+        btn2="book a stand"
+        gradient="custom-bg-gradient-2"
       />
     </div>
   </div>
@@ -56,19 +51,19 @@ import CarrousalDiv from "../small-components/CarrousalDiv.astro";
   >
     <button
       type="button"
-      class="lg:w-3 lg:h-3 h-2 w-2 rounded-full indicator-active"
+      class="lg:w-3 lg:h-3 h-2 w-2 rounded-full"
       aria-current="true"
       aria-label="Slide 1"
       data-carousel-slide-to="0"></button>
     <button
       type="button"
-      class="lg:w-3 lg:h-3 h-2 w-2 rounded-full indicator-inactive"
+      class="lg:w-3 lg:h-3 h-2 w-2 rounded-full bg-white/50"
       aria-current="false"
       aria-label="Slide 2"
       data-carousel-slide-to="1"></button>
     <button
       type="button"
-      class="lg:w-3 lg:h-3 h-2 w-2 rounded-full indicator-inactive"
+      class="lg:w-3 lg:h-3 h-2 w-2 rounded-full bg-white/50"
       aria-current="false"
       aria-label="Slide 3"
       data-carousel-slide-to="2"></button>

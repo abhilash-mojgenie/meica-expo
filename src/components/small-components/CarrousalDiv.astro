@@ -1,10 +1,10 @@
 ---
-const { bg, title, desc, btn1, btn2 } = Astro.props;
+const { bg, title, desc, btn1, btn2, gradient } = Astro.props;
 ---
 
 <div class={`${bg} h-full w-full bg-no-repeat object-cover bg-right  `}>
   <div
-    class="linear-gradient-hero angled-div h-full max-w-[490px] lg:max-w-[580px] xl:max-w-[885px] 2xl:max-w-[1054px]"
+    class={`${gradient} angled-div h-full max-w-[490px] lg:max-w-[580px] xl:max-w-[885px] 2xl:max-w-[1054px]`}
   >
     <div
       class="2xl:pl-[79px] 2xl:pr-[80px] xl:px-[32px] 2xl:pt-[70px] xl:pt-[94px] lg:px-[30px] lg:pt-[80px] pt-[50px] px-[20px]"
