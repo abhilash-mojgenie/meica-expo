@@ -3,24 +3,24 @@ const { src, name, pos, com } = Astro.props;
 ---
 
 <div
-  class="max-w-[353px] lg:w-full 2xl:w-full border-avatar-panellist rounded-t-[20px]"
+  class="max-w-[353px] md:w-full 2xl:w-full border-avatar-panellist rounded-t-[20px]"
 >
   <div class="lg:w-full 2xl:w-full">
     <img
       src={src}
-      class="object-cover w-full 2xl:w-full rounded-t-[20px] xl:h-[252px] 2xl:h-[278px] lg:h-[200px]"
+      class="object-cover w-full 2xl:w-full rounded-t-[20px] xl:h-[252px] 2xl:h-[278px] lg:h-[200px] md:h-[250px]"
       alt=""
     />
   </div>
   <div class="bg-white rounded-b-[20px]">
     <div
-      class="flex flex-col items-center lg:py-[20px] xl:py-[52px] 2xl:pt-[58px] 2xl:pb-[75px]"
+      class="flex flex-col items-center md:py-[20px] xl:py-[52px] 2xl:pt-[58px] 2xl:pb-[75px]"
     >
-      <p class="text-[#2B3D4F] font-semibold xl:text-[36px] lg:text-[23px]">
+      <p class="text-[#2B3D4F] font-semibold xl:text-[36px] md:text-[23px]">
         {name}
       </p>
-      <p class="mt-[1px] xl:text-[22px] lg:text-[18px]">{pos}</p>
-      <p class="font-semibold xl:text-[22px] lg:text-[18px]">{com}</p>
+      <p class="mt-[1px] xl:text-[22px] md:text-[18px]">{pos}</p>
+      <p class="font-semibold xl:text-[22px] md:text-[18px]">{com}</p>
     </div>
   </div>
 </div>

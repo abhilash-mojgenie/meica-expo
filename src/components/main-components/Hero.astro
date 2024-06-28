@@ -4,11 +4,13 @@ import CarrousalDiv from "../small-components/CarrousalDiv.astro";
 
 <div
   id="default-carousel"
-  class="relative w-full lg:h-[450px] xl:h-[554px] 2xl:h-[563px]"
+  class="relative w-full hidden md:block h-[400px] lg:h-[450px] xl:h-[554px] 2xl:h-[563px]"
   data-carousel="slide"
 >
   <!-- Carousel wrapper -->
-  <div class="relative overflow-hidden lg:h-[450px] xl:h-[554px] 2xl:h-[563px]">
+  <div
+    class="relative overflow-hidden h-[400px] lg:h-[450px] xl:h-[554px] 2xl:h-[563px]"
+  >
     <!-- Item 1 -->
     <div class="h-full w-full duration-700 ease-in-out" data-carousel-item="">
       <CarrousalDiv
@@ -50,23 +52,23 @@ import CarrousalDiv from "../small-components/CarrousalDiv.astro";
   </div>
   <!-- Slider indicators -->
   <div
-    class="absolute z-30 flex bottom-[18px] lg:left-[150px] xl:left-[200px] 2xl:left-[357px] space-x-3 rtl:space-x-reverse"
+    class="absolute z-30 flex bottom-[18px] left-[150px] xl:left-[200px] 2xl:left-[357px] space-x-3 rtl:space-x-reverse"
   >
     <button
       type="button"
-      class="w-3 h-3 rounded-full indicator-active"
+      class="lg:w-3 lg:h-3 h-2 w-2 rounded-full indicator-active"
       aria-current="true"
       aria-label="Slide 1"
       data-carousel-slide-to="0"></button>
     <button
       type="button"
-      class="w-3 h-3 rounded-full indicator-inactive"
+      class="lg:w-3 lg:h-3 h-2 w-2 rounded-full indicator-inactive"
       aria-current="false"
       aria-label="Slide 2"
       data-carousel-slide-to="1"></button>
     <button
       type="button"
-      class="w-3 h-3 rounded-full indicator-inactive"
+      class="lg:w-3 lg:h-3 h-2 w-2 rounded-full indicator-inactive"
       aria-current="false"
       aria-label="Slide 3"
       data-carousel-slide-to="2"></button>
@@ -74,12 +76,14 @@ import CarrousalDiv from "../small-components/CarrousalDiv.astro";
   <!-- Slider controls -->
   <button
     type="button"
-    class="absolute bottom-0 w-[50px] h-[50px] start-0 z-50 flex items-center justify-center bg-[#00CEB5] cursor-pointer group focus:outline-none"
+    class="absolute bottom-0 lg:w-[50px] lg:h-[50px] w-[30px] h-[30px] start-0 z-50 flex items-center justify-center bg-[#00CEB5] cursor-pointer group focus:outline-none"
     data-carousel-prev
   >
-    <span class="inline-flex items-center justify-center w-[50px] h-[50px]">
+    <span
+      class="inline-flex items-center justify-center lg:w-[50px] lg:h-[50px] w-[30px] h-[30px]"
+    >
       <svg
-        class="w-4 h-4 text-white rtl:rotate-180"
+        class="lg:w-4 lg:h-4 w-3 h-3 text-white rtl:rotate-180"
         aria-hidden="true"
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
@@ -97,14 +101,14 @@ import CarrousalDiv from "../small-components/CarrousalDiv.astro";
   </button>
   <button
     type="button"
-    class="absolute bg-[#00CEB5] bottom-0 end-0 z-50 w-[50px] h-[50px] flex items-center justify-center cursor-pointer group focus:outline-none"
+    class="absolute bg-[#00CEB5] bottom-0 end-0 z-50 lg:w-[50px] lg:h-[50px] w-[30px] h-[30px] flex items-center justify-center cursor-pointer group focus:outline-none"
     data-carousel-next
   >
     <span
-      class="inline-flex items-center justify-center w-[50px] h-[50px] rounded-full"
+      class="inline-flex items-center justify-center lg:w-[50px] lg:h-[50px] w-[30px] h-[30px] rounded-full"
     >
       <svg
-        class="w-4 h-4 text-white rtl:rotate-180"
+        class="lg:w-4 lg:h-4 w-3 h-3 text-white rtl:rotate-180"
         aria-hidden="true"
         xmlns="http://www.w3.org/2000/svg"
         fill="none"

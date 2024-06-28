@@ -4,18 +4,18 @@ const { bg, title, desc, btn1, btn2 } = Astro.props;
 
 <div class={`${bg} h-full w-full bg-no-repeat object-cover bg-right  `}>
   <div
-    class="linear-gradient-hero angled-div h-full lg:max-w-[580px] xl:max-w-[825px] 2xl:max-w-[1054px]"
+    class="linear-gradient-hero angled-div h-full max-w-[490px] lg:max-w-[580px] xl:max-w-[825px] 2xl:max-w-[1054px]"
   >
     <div
-      class="2xl:pl-[79px] 2xl:pr-[80px] xl:px-[32px] 2xl:pt-[70px] xl:pt-[94px] lg:px-[30px] lg:pt-[80px]"
+      class="2xl:pl-[79px] 2xl:pr-[80px] xl:px-[32px] 2xl:pt-[70px] xl:pt-[94px] lg:px-[30px] lg:pt-[80px] pt-[50px] px-[20px]"
     >
       <p
-        class="text-white lg:text-[23px] xl:text-[38px] 2xl:text-[46px] font-semibold max-w-[810px]"
+        class="text-white text-[23px] lg:text-[23px] xl:text-[38px] 2xl:text-[46px] font-semibold max-w-[810px]"
       >
         {title}
       </p>
       <p
-        class="font-light metropolis-font lg:text-[15px] xl:text-[17px] lg:pt-[25px] lg:pb-[40px] xl:pt-[32px] xl:pb-[52px] 2xl:text-[20px] 2xl:pb-[56px] 2xl:pt-[38px] lg:max-w-[440px] xl:max-w-[655px] 2xl:max-w-[750px] text-white"
+        class="font-light metropolis-font text-[14px] py-[30px] max-w-[350px] lg:text-[15px] xl:text-[17px] lg:pt-[25px] lg:pb-[40px] xl:pt-[32px] xl:pb-[52px] 2xl:text-[20px] 2xl:pb-[56px] 2xl:pt-[38px] lg:max-w-[440px] xl:max-w-[655px] 2xl:max-w-[750px] text-white"
       >
         {desc}
       </p>
@@ -29,7 +29,7 @@ const { bg, title, desc, btn1, btn2 } = Astro.props;
             class="w-full h-48 rounded bg-white absolute bottom-[-40px] right-0 translate-x-full ease-out duration-700 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"
           ></span>
           <span
-            class="2xl:text-[22px] metropolis-font xl:text-[18px] lg:text-[14px] text-[#309BD6] skew-fix uppercase group-hover:text-[#309BD6] transition-colors duration-700 ease-in-out"
+            class="2xl:text-[22px] text-[14px] px-5 py-[4px] metropolis-font xl:text-[18px] lg:text-[14px] text-[#309BD6] skew-fix uppercase group-hover:text-[#309BD6] transition-colors duration-700 ease-in-out"
             >{btn1}</span
           >
         </button>
@@ -41,7 +41,7 @@ const { bg, title, desc, btn1, btn2 } = Astro.props;
             class="w-full h-48 rounded bg-[#25a192] absolute bottom-[-40px] left-0 translate-x-full ease-out duration-500 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"
           ></span>
           <span
-            class="2xl:text-[22px] metropolis-font xl:text-[18px] lg:text-[16px] text-white skew-fix uppercase group-hover:text-white transition-colors duration-700 ease-in-out"
+            class="2xl:text-[22px] text-[14px] px-5 py-[4px] metropolis-font xl:text-[18px] lg:text-[16px] text-white skew-fix uppercase group-hover:text-white transition-colors duration-700 ease-in-out"
             >{btn2}</span
           >
         </button>

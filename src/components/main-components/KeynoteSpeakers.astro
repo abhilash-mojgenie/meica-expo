@@ -4,11 +4,11 @@ import KeynoteCard from "../small-components/KeynoteCard.astro";
 import SubHeading from "../small-components/SubHeading.astro";
 ---
 
-<div class="lg:mt-[50px] 2xl:mt-[100px]">
+<div class="mt-[50px] 2xl:mt-[100px]">
   <SubHeading title="keynote speakers" />
 
   <div
-    class="flex justify-between gap-[60px] 2xl:gap-[112px] mt-[55px] mb-[100px]"
+    class="flex md:flex-row flex-col my-[30px] justify-center items-center lg:items-start gap-10 lg:justify-between lg:gap-[60px] 2xl:gap-[112px] lg:mt-[55px] lg:mb-[100px]"
   >
     <KeynoteCard
       src="/assets/img/png/avatar-1.png"
@@ -25,10 +25,14 @@ import SubHeading from "../small-components/SubHeading.astro";
   </div>
   <div class="bg-[#E0F6FF] w-full relative 2xl:h-[789px]">
     <div class="absolute right-0 h-full">
-      <img src="/assets/img/svg/pattern-speakers.svg" alt="" />
+      <img
+        src="/assets/img/svg/pattern-speakers.svg"
+        alt=""
+        class="h-full w-full"
+      />
     </div>
     <div
-      class="pt-[100px] xl:pt-[128px] px-1 2xl:pl-[81px] 2xl:pr-[161px] grid grid-cols-2 xl:grid-cols-4 z-10 lg:gap-[30px]"
+      class="lg:pt-[100px] pt-[50px] xl:pt-[128px] px-1 2xl:pl-[81px] 2xl:pr-[161px] grid grid-cols-2 xl:grid-cols-4 z-10 gap-[30px]"
     >
       <Avatar
         src="/assets/img/png/avatar-3.png"

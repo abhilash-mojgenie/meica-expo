@@ -5,13 +5,15 @@ import GoldSponsorCard from "../small-components/GoldSponsorCard.astro";
 import SilverSponsorCard from "../small-components/SilverSponsorCard.astro";
 ---
 
-<div class="pb-[100px] pt-[50px] px-[80px] bg-[#2B3D4F] mt-[50px]">
+<div
+  class="xl:pb-[100px] xl:pt-[50px] xl:px-[80px] bg-[#2B3D4F] xl:mt-[50px] md:p-[50px] xl:p-0"
+>
   <SubHeading title="Participating Companies" white />
 
   <div class="mt-[72px]">
     <ParticipatingSubheading title="Principle Sponsor" />
 
-    <div class="flex justify-center lg:my-[45px] 2xl:my-[85px]">
+    <div class="flex justify-center md:py-[20px] lg:my-[45px] 2xl:my-[85px]">
       <div
         class="bg-white rounded-[20px] xl:w-[576px] xl:h-[215px] flex justify-center items-center border-sponsor"
       >
@@ -28,7 +30,7 @@ import SilverSponsorCard from "../small-components/SilverSponsorCard.astro";
     <ParticipatingSubheading title="Gold Sponsor" />
 
     <div
-      class="my-[72px] grid grid-cols-3 lg:gap-[50px] xl:gap-[100px] 2xl:gap-[168px]"
+      class="my-[30px] lg:my-[72px] grid grid-cols-2 gap-[25px] lg:grid-cols-3 lg:gap-[50px] xl:gap-[100px] 2xl:gap-[168px]"
     >
       <GoldSponsorCard src="/assets/img/partners/hitachi.png" />
       <GoldSponsorCard src="/assets/img/partners/honey-well.png" />
@@ -40,7 +42,9 @@ import SilverSponsorCard from "../small-components/SilverSponsorCard.astro";
   <div class="">
     <ParticipatingSubheading title="Silver Sponsor" />
 
-    <div class="my-[72px] grid grid-cols-4 gap-[23px]">
+    <div
+      class="my-[30px] lg:my-[72px] grid lg:grid-cols-4 grid-cols-2 gap-[23px]"
+    >
       <SilverSponsorCard src="/assets/img/partners/atco.png" />
       <SilverSponsorCard src="/assets/img/partners/xage-security.png" />
 
@@ -52,7 +56,9 @@ import SilverSponsorCard from "../small-components/SilverSponsorCard.astro";
   <div class="">
     <ParticipatingSubheading title="Exhibitors" />
 
-    <div class="mt-[72px] grid grid-cols-4 gap-[23px]">
+    <div
+      class="md:mt-[30px] lg:mt-[72px] grid grid-cols-3 lg:grid-cols-4 gap-[23px]"
+    >
       <SilverSponsorCard src="/assets/img/partners/drager-logo.png" />
       <SilverSponsorCard src="/assets/img/partners/ccc-logo.png" />
 
