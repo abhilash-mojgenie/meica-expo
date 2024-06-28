@@ -4,5 +4,19 @@ export default {
   theme: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    function ({ addUtilities }) {
+      const newUtilities = {
+        ".scrollbar-hidden": {
+          "&::-webkit-scrollbar": {
+            display: "none",
+          },
+          scrollbarWidth: "none",
+          "-ms-overflow-style": "none",
+        },
+      };
+      addUtilities(newUtilities, ["responsive", "hover"]);
+    },
+    require("flowbite/plugin"),
+  ],
 };

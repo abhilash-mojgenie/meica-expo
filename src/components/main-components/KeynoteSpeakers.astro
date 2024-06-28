@@ -1,14 +1,15 @@
 ---
 import Avatar from "../small-components/Avatar.astro";
+import AvatarMobile from "../small-components/AvatarMobile.astro";
 import KeynoteCard from "../small-components/KeynoteCard.astro";
 import SubHeading from "../small-components/SubHeading.astro";
 ---
 
-<div class="mt-[50px] 2xl:mt-[100px]">
+<div class="mt-[40px] md:mt-[50px] 2xl:mt-[100px]">
   <SubHeading title="keynote speakers" />
 
   <div
-    class="flex md:flex-row flex-col my-[30px] justify-center items-center lg:items-start gap-10 lg:justify-between lg:gap-[60px] 2xl:gap-[112px] lg:mt-[55px] lg:mb-[100px]"
+    class="flex md:flex-row px-[20px] md:px-0 flex-col my-[40px] md:my-[30px] justify-center items-center lg:items-start gap-10 lg:justify-between lg:gap-[60px] 2xl:gap-[112px] lg:mt-[55px] lg:mb-[100px]"
   >
     <KeynoteCard
       src="/assets/img/png/avatar-1.png"
@@ -24,15 +25,13 @@ import SubHeading from "../small-components/SubHeading.astro";
     />
   </div>
   <div class="bg-[#E0F6FF] w-full relative 2xl:h-[789px]">
-    <div class="absolute right-0 h-full">
-      <img
-        src="/assets/img/svg/pattern-speakers.svg"
-        alt=""
-        class="h-full w-full"
-      />
-    </div>
+    <img
+      src="/assets/img/svg/pattern-speakers.svg"
+      alt=""
+      class="absolute top-0 right-0"
+    />
     <div
-      class="lg:pt-[100px] pt-[50px] xl:pt-[128px] px-1 2xl:pl-[81px] 2xl:pr-[161px] grid grid-cols-2 xl:grid-cols-4 z-10 gap-[30px]"
+      class="lg:pt-[100px] pt-[40px] gap-[25px] hidden w-full md:pt-[50px] xl:pt-[128px] md:px-1 2xl:pl-[81px] 2xl:pr-[161px] md:grid md:grid-cols-2 xl:grid-cols-4 z-10 md:gap-[30px] px-[23px]"
     >
       <Avatar
         src="/assets/img/png/avatar-3.png"
@@ -59,13 +58,51 @@ import SubHeading from "../small-components/SubHeading.astro";
         com="Saudi Aramco"
       />
     </div>
+    <div
+      class="overflow-scroll scrollbar-hidden flex md:hidden w-full z-10"
+      id="first-div"
+    >
+      <div class="flex gap-[25px] w-full mt-[40px] mx-[23px]">
+        <AvatarMobile
+          src="/assets/img/png/avatar-3.png"
+          name="James Rock"
+          pos="Founder & CEO"
+          com="Saudi Aramco"
+        />
+        <AvatarMobile
+          src="/assets/img/png/avatar-4.png"
+          name="James Rock"
+          pos="Founder & CEO"
+          com="Saudi Aramco"
+        />
+      </div>
+      <div
+        class="flex gap-[25px] w-full mt-[40px] mx-[23px] hidden"
+        id="secondDiv"
+      >
+        <AvatarMobile
+          src="/assets/img/png/avatar-5.png"
+          name="James Rock"
+          pos="Founder & CEO"
+          com="Saudi Aramco"
+        />
+        <AvatarMobile
+          src="/assets/img/png/avatar-6.png"
+          name="James Rock"
+          pos="Founder & CEO"
+          com="Saudi Aramco"
+        />
+      </div>
+    </div>
 
-    <div class="py-[100px] flex justify-center">
+    <div
+      class="pt-[100px] pb-[39px] md:py-[100px] px-[43px] flex justify-center"
+    >
       <button
         class="linear-gradient-button font-semibold text-[22px] parallelogram"
       >
         <span
-          class="px-[115px] py-[12px] text-center uppercase skew-fix text-[22px] text-white"
+          class="px-[65px] md:px-[115px] py-[9px] md:py-[12px] text-center uppercase skew-fix text-[16px] md:text-[22px] text-white"
           >View All Speakers</span
         >
       </button>

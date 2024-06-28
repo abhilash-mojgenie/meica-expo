@@ -68,7 +68,7 @@ body {
   right: 0;
   bottom: 0;
   border-radius: 20px; /* Match the border radius */
-  padding: 5px; /* Adjust to match the border width */
+  padding: 3.5px; /* Adjust to match the border width */
   background: linear-gradient(180deg, #25a192 0%, #4081b3 100%);
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
@@ -89,10 +89,24 @@ body {
   right: 0;
   bottom: 0;
   border-radius: 20px; /* Match the border radius */
-  padding: 3px; /* Adjust to match the border width */
+  padding: 3.5px; /* Adjust to match the border width */
   background: linear-gradient(180deg, #25a192 0%, #4081b3 100%);
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
   mask-composite: exclude;
   pointer-events: none;
+}
+.custom-gradient-hero-mobile {
+  background: linear-gradient(
+    133.14deg,
+    #4180b4 17.33%,
+    rgba(115, 115, 115, 0.44) 100.91%
+  );
+}
+.custom-buttom-gradient-mobile {
+  background: linear-gradient(
+    0deg,
+    rgba(37, 161, 146, 0.83),
+    rgba(37, 161, 146, 0.83)
+  );
 }

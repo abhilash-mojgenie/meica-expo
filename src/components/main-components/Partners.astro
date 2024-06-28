@@ -6,16 +6,18 @@ import SilverSponsorCard from "../small-components/SilverSponsorCard.astro";
 ---
 
 <div
-  class="xl:pb-[100px] xl:pt-[50px] xl:px-[80px] bg-[#2B3D4F] xl:mt-[50px] md:p-[50px] xl:p-0"
+  class="xl:pb-[100px] xl:pt-[50px] xl:px-[80px] bg-[#2B3D4F] xl:mt-[50px] md:p-[50px] xl:p-0 p-[20px]"
 >
   <SubHeading title="Participating Companies" white />
 
-  <div class="mt-[72px]">
+  <div class="mt-[20px] md:mt-[72px]">
     <ParticipatingSubheading title="Principle Sponsor" />
 
-    <div class="flex justify-center md:py-[20px] lg:my-[45px] 2xl:my-[85px]">
+    <div
+      class="flex justify-center my-[20px] md:py-[20px] lg:my-[45px] 2xl:my-[85px]"
+    >
       <div
-        class="bg-white rounded-[20px] xl:w-[576px] xl:h-[215px] flex justify-center items-center border-sponsor"
+        class="bg-white rounded-[20px] w-[250px] md:w-[550px] xl:w-[576px] xl:h-[215px] flex justify-center items-center border-sponsor"
       >
         <img
           src="/assets/img/partners/petroleum-oman.png"
@@ -30,7 +32,7 @@ import SilverSponsorCard from "../small-components/SilverSponsorCard.astro";
     <ParticipatingSubheading title="Gold Sponsor" />
 
     <div
-      class="my-[30px] lg:my-[72px] grid grid-cols-2 gap-[25px] lg:grid-cols-3 lg:gap-[50px] xl:gap-[100px] 2xl:gap-[168px]"
+      class="my-[30px] lg:my-[72px] grid grid-cols-1 place-items-center md:place-content-start md:grid-cols-2 gap-[25px] lg:grid-cols-3 lg:gap-[50px] xl:gap-[100px] 2xl:gap-[168px]"
     >
       <GoldSponsorCard src="/assets/img/partners/hitachi.png" />
       <GoldSponsorCard src="/assets/img/partners/honey-well.png" />
@@ -57,7 +59,7 @@ import SilverSponsorCard from "../small-components/SilverSponsorCard.astro";
     <ParticipatingSubheading title="Exhibitors" />
 
     <div
-      class="md:mt-[30px] lg:mt-[72px] grid grid-cols-3 lg:grid-cols-4 gap-[23px]"
+      class="md:mt-[30px] mt-[30px] lg:mt-[72px] grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-[23px]"
     >
       <SilverSponsorCard src="/assets/img/partners/drager-logo.png" />
       <SilverSponsorCard src="/assets/img/partners/ccc-logo.png" />

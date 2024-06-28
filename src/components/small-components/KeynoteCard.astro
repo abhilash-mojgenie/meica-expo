@@ -3,10 +3,12 @@ const { src, name, pos, id } = Astro.props;
 ---
 
 <div class="flex">
-  <div class="relative flex items-center">
+  <div
+    class="relative flex md:flex-row flex-col justify-center items-center text-center md:text-start gap-[20px] md:gap-0"
+  >
     <div>
       <svg
-        class="2xl:h-[389px] 2xl:w-[328px] xl:h-[324px] lg:w-[230px] xl:w-[274px] md:w-[160px]"
+        class="2xl:h-[389px] 2xl:w-[328px] xl:h-[324px] lg:w-[230px] xl:w-[274px] md:w-[160px] w-[339px] h-[413px]"
         viewBox="0 0 328 389"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
@@ -47,12 +49,12 @@ const { src, name, pos, id } = Astro.props;
       class="flex flex-col gap-[9px] 2xl:gap-[20px] lg:pl-[10px] xl:pl-0 xl:ml-[-15px] 2xl:pl-[45px]"
     >
       <p
-        class="text-[#2B3D4F] font-semibold md:text-[17px] lg:text-[20px] xl:text-[35px]"
+        class="text-[#2B3D4F] font-semibold md:text-[17px] lg:text-[20px] xl:text-[35px] text-[20px]"
       >
         {name}
       </p>
       <p
-        class="2xl:max-w-[506px] md:text-[18px] xl:text-[24px] 2xl:text-[26px]"
+        class="2xl:max-w-[506px] md:text-[18px] xl:text-[24px] 2xl:text-[26px] text-[16px]"
       >
         {pos}
       </p>

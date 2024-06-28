@@ -10,11 +10,16 @@ import TechnicalDomainSection from "../components/main-components/TechnicalDomai
 import Partners from "../components/main-components/Partners.astro";
 import TechnicalCommittee from "../components/main-components/TechnicalCommittee.astro";
 import MeicaPartner from "../components/main-components/MeicaPartner.astro";
+import NavMobile from "../components/main-components/NavMobile.astro";
+import HeroMobile from "../components/main-components/HeroMobile.astro";
 ---
 
 <Layout title="Meica">
+  <NavMobile />
+
   <div class="2xl:mx-[80px] lg:mx-[30px] md:px-[20px]">
     <Nav />
+    <HeroMobile />
     <Hero />
     <KeynoteSpeakers />
     <About />
