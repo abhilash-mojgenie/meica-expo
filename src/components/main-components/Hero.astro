@@ -3,120 +3,123 @@ import CarrousalDiv from "../small-components/CarrousalDiv.astro";
 ---
 
 <div
-  id="default-carousel"
-  class="relative w-full hidden md:block h-[400px] lg:h-[450px] xl:h-[554px] 2xl:h-[563px]"
-  data-carousel="slide"
+    id="default-carousel"
+    class="relative w-full hidden md:block h-[400px] lg:h-[450px] xl:h-[554px] 2xl:h-[563px]"
+    data-carousel="slide"
 >
-  <!-- Carousel wrapper -->
-  <div
-    class="relative overflow-hidden h-[400px] lg:h-[450px] xl:h-[554px] 2xl:h-[563px]"
-  >
-    <!-- Item 1 -->
-    <div class="h-full w-full duration-700 ease-in-out" data-carousel-item="">
-      <CarrousalDiv
-        bg="bg-[url('/assets/img/png/meica-hero.png')]"
-        title="INSTRUMENTATION, CYBERSECURITY & AUTOMATION EXPO"
-        desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et"
-        btn1="Register now"
-        btn2="book a stand"
-        gradient="linear-gradient-hero"
-      />
-    </div>
-    <!-- Item 2 -->
-    <div class="h-full w-full duration-700 ease-in-out" data-carousel-item>
-      <CarrousalDiv
-        bg="bg-[url('/assets/img/png/meica-hero.png')]"
-        title="INSTRUMENTATION, CYBERSECURITY & AUTOMATION EXPO"
-        desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et"
-        btn1="Register now"
-        btn2="book a stand"
-        gradient="custom-bg-gradient-1"
-      />
-    </div>
-    <!-- Item 3 -->
-    <div class="h-full w-full duration-700 ease-in-out" data-carousel-item>
-      <CarrousalDiv
-        bg="bg-[url('/assets/img/png/meica-hero.png')]"
-        title="INSTRUMENTATION, CYBERSECURITY & AUTOMATION EXPO"
-        desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et"
-        btn1="Register now"
-        btn2="book a stand"
-        gradient="custom-bg-gradient-2"
-      />
-    </div>
-  </div>
-  <!-- Slider indicators -->
-  <div
-    class="absolute z-30 flex bottom-[18px] left-[150px] xl:left-[200px] 2xl:left-[357px] space-x-3 rtl:space-x-reverse"
-  >
-    <button
-      type="button"
-      class="lg:w-3 lg:h-3 h-2 w-2 rounded-full"
-      aria-current="true"
-      aria-label="Slide 1"
-      data-carousel-slide-to="0"></button>
-    <button
-      type="button"
-      class="lg:w-3 lg:h-3 h-2 w-2 rounded-full bg-white/50"
-      aria-current="false"
-      aria-label="Slide 2"
-      data-carousel-slide-to="1"></button>
-    <button
-      type="button"
-      class="lg:w-3 lg:h-3 h-2 w-2 rounded-full bg-white/50"
-      aria-current="false"
-      aria-label="Slide 3"
-      data-carousel-slide-to="2"></button>
-  </div>
-  <!-- Slider controls -->
-  <button
-    type="button"
-    class="absolute bottom-0 lg:w-[50px] lg:h-[50px] w-[30px] h-[30px] start-0 z-50 flex items-center justify-center bg-[#00CEB5] cursor-pointer group focus:outline-none"
-    data-carousel-prev
-  >
-    <span
-      class="inline-flex items-center justify-center lg:w-[50px] lg:h-[50px] w-[30px] h-[30px]"
+    <!-- Carousel wrapper -->
+    <div
+        class="relative overflow-hidden h-[400px] lg:h-[450px] xl:h-[554px] 2xl:h-[563px]"
     >
-      <svg
-        class="lg:w-4 lg:h-4 w-3 h-3 text-white rtl:rotate-180"
-        aria-hidden="true"
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 6 10"
-      >
-        <path
-          stroke="currentColor"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="2"
-          d="M5 1 1 5l4 4"></path>
-      </svg>
-      <span class="sr-only">Previous</span>
-    </span>
-  </button>
-  <button
-    type="button"
-    class="absolute bg-[#00CEB5] bottom-0 end-0 z-50 lg:w-[50px] lg:h-[50px] w-[30px] h-[30px] flex items-center justify-center cursor-pointer group focus:outline-none"
-    data-carousel-next
-  >
-    <span
-      class="inline-flex items-center justify-center lg:w-[50px] lg:h-[50px] w-[30px] h-[30px] rounded-full"
+        <!-- Item 1 -->
+        <div
+            class="h-full w-full duration-700 ease-in-out"
+            data-carousel-item=""
+        >
+            <CarrousalDiv
+                bg="bg-[url('/assets/img/png/meica-hero.png')]"
+                title="INSTRUMENTATION, CYBERSECURITY & AUTOMATION EXPO"
+                desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et"
+                btn1="Register now"
+                btn2="book a stand"
+                gradient="linear-gradient-hero"
+            />
+        </div>
+        <!-- Item 2 -->
+        <div class="h-full w-full duration-700 ease-in-out" data-carousel-item>
+            <CarrousalDiv
+                bg="bg-[url('/assets/img/jpg/application-programming.jpg')]"
+                title="INSTRUMENTATION, CYBERSECURITY & AUTOMATION EXPO"
+                desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et"
+                btn1="Register now"
+                btn2="book a stand"
+                gradient="custom-bg-gradient-1"
+            />
+        </div>
+        <!-- Item 3 -->
+        <div class="h-full w-full duration-700 ease-in-out" data-carousel-item>
+            <CarrousalDiv
+                bg="bg-[url('/assets/img/png/meica-hero.png')]"
+                title="INSTRUMENTATION, CYBERSECURITY & AUTOMATION EXPO"
+                desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et"
+                btn1="Register now"
+                btn2="book a stand"
+                gradient="custom-bg-gradient-2"
+            />
+        </div>
+    </div>
+    <!-- Slider indicators -->
+    <div
+        class="absolute z-30 flex bottom-[18px] left-[150px] xl:left-[200px] 2xl:left-[357px] space-x-3 rtl:space-x-reverse"
     >
-      <svg
-        class="lg:w-4 lg:h-4 w-3 h-3 text-white rtl:rotate-180"
-        aria-hidden="true"
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 6 10"
-      >
-        <path
-          stroke="currentColor"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="2"
-          d="m1 9 4-4-4-4"></path>
-      </svg>
-      <span class="sr-only">Next</span>
-    </span>
-  </button>
+        <button
+            type="button"
+            class="lg:w-3 lg:h-3 h-2 w-2 rounded-full"
+            aria-current="true"
+            aria-label="Slide 1"
+            data-carousel-slide-to="0"></button>
+        <button
+            type="button"
+            class="lg:w-3 lg:h-3 h-2 w-2 rounded-full bg-white/50"
+            aria-current="false"
+            aria-label="Slide 2"
+            data-carousel-slide-to="1"></button>
+        <button
+            type="button"
+            class="lg:w-3 lg:h-3 h-2 w-2 rounded-full bg-white/50"
+            aria-current="false"
+            aria-label="Slide 3"
+            data-carousel-slide-to="2"></button>
+    </div>
+    <!-- Slider controls -->
+    <button
+        type="button"
+        class="absolute bottom-0 lg:w-[50px] lg:h-[50px] w-[30px] h-[30px] start-0 z-50 flex items-center justify-center bg-[#00CEB5] cursor-pointer group focus:outline-none"
+        data-carousel-prev
+    >
+        <span
+            class="inline-flex items-center justify-center lg:w-[50px] lg:h-[50px] w-[30px] h-[30px]"
+        >
+            <svg
+                class="lg:w-4 lg:h-4 w-3 h-3 text-white rtl:rotate-180"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 6 10"
+            >
+                <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 1 1 5l4 4"></path>
+            </svg>
+            <span class="sr-only">Previous</span>
+        </span>
+    </button>
+    <button
+        type="button"
+        class="absolute bg-[#00CEB5] bottom-0 end-0 z-50 lg:w-[50px] lg:h-[50px] w-[30px] h-[30px] flex items-center justify-center cursor-pointer group focus:outline-none"
+        data-carousel-next
+    >
+        <span
+            class="inline-flex items-center justify-center lg:w-[50px] lg:h-[50px] w-[30px] h-[30px] rounded-full"
+        >
+            <svg
+                class="lg:w-4 lg:h-4 w-3 h-3 text-white rtl:rotate-180"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 6 10"
+            >
+                <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="m1 9 4-4-4-4"></path>
+            </svg>
+            <span class="sr-only">Next</span>
+        </span>
+    </button>
 </div>
