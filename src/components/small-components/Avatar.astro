@@ -1,5 +1,5 @@
 ---
-const { src, name, pos, com } = Astro.props;
+const { src, name, pos, com, top } = Astro.props;
 ---
 
 <div
@@ -8,7 +8,7 @@ const { src, name, pos, com } = Astro.props;
   <div class="w-full">
     <img
       src={src}
-      class="xl:h-[250px] xl:w-[250px] md:w-[150px] md:h-[150px] lg:w-[200px] lg:h-[200px] w-[162px] h-[132px] rounded-full object-cover mx-auto"
+      class={`xl:h-[250px] xl:w-[250px] md:w-[150px] md:h-[150px] lg:w-[200px] lg:h-[200px] w-[162px] h-[132px] rounded-full object-cover mx-auto ${top ? "object-top" : ""}`}
       alt=""
     />
   </div>
