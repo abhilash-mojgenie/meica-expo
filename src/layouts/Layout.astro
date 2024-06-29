@@ -16,10 +16,27 @@ import "../scss/custom.scss";
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
+    <!-- og tags -->
+    <meta property="og:title" content="MEICA EXPO" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:url" content="" />
+    <meta
+      property="og:description"
+      content="INSTRUMENTATION, CYBERSECURITY & AUTOMATION EXPO"
+    />
+    <meta property="og:type" content="" />
+    <meta property="og:image" content="/assets/img/png/meica-logo.png" />
+    <!-- og tags ends -->
     <title>{title}</title>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"
     ></script>
+
+    <!-- Include DaisyUI via CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@1.12.2/dist/full.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="w-full hidden md:flex justify-between">

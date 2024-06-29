@@ -68,7 +68,7 @@ body {
   right: 0;
   bottom: 0;
   border-radius: 20px; /* Match the border radius */
-  padding: 3.5px; /* Adjust to match the border width */
+  padding: 2px; /* Adjust to match the border width */
   background: linear-gradient(180deg, #25a192 0%, #4081b3 100%);
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
@@ -89,7 +89,7 @@ body {
   right: 0;
   bottom: 0;
   border-radius: 20px; /* Match the border radius */
-  padding: 3.5px; /* Adjust to match the border width */
+  padding: 2px; /* Adjust to match the border width */
   background: linear-gradient(180deg, #25a192 0%, #4081b3 100%);
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
@@ -141,3 +141,20 @@ body {
       #989898;
   background-blend-mode: multiply, multiply;
 }
+.overflow-scroll {
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch; /* Optional: Smooth scrolling on iOS */
+}
+
+.scrollbar-hidden {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+}
+
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none; /* WebKit */
+}
+
+/* Adjust styles for AvatarMobile if needed */

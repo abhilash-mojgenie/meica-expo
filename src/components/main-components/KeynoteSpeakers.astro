@@ -58,42 +58,96 @@ import SubHeading from "../small-components/SubHeading.astro";
         com="Saudi Aramco"
       />
     </div>
+
+    <!-- mobile -->
     <div
-      class="overflow-scroll scrollbar-hidden flex md:hidden w-full z-10"
-      id="first-div"
+      class="relative w-full h-[300px] pt-[40px] px-[23px] md:hidden"
+      data-carousel="static"
     >
-      <div class="flex gap-[25px] w-full mt-[40px] mx-[23px]">
-        <AvatarMobile
-          src="/assets/img/speakers/speaker-1.avif"
-          name="James Rock"
-          pos="Founder & CEO"
-          com="Saudi Aramco"
-        />
-        <AvatarMobile
-          src="/assets/img/speakers/speaker-2.avif"
-          name="James Rock"
-          pos="Founder & CEO"
-          com="Saudi Aramco"
-        />
+      <!-- Carousel wrapper -->
+      <div class="relative h-[300px] overflow-hidden" id="carouselWrapper">
+        <!-- Item 1 -->
+        <div
+          class="hidden duration-700 ease-in-out"
+          data-carousel-item="active"
+        >
+          <div class="flex gap-[25px] w-full bg-white">
+            <AvatarMobile
+              src="/assets/img/speakers/speaker-1.avif"
+              name="James Rock"
+              pos="Founder & CEO"
+              com="Saudi Aramco"
+            />
+            <AvatarMobile
+              src="/assets/img/speakers/speaker-2.avif"
+              name="James Rock"
+              pos="Founder & CEO"
+              com="Saudi Aramco"
+            />
+          </div>
+        </div>
+        <!-- Item 2 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <div class="flex gap-[25px] w-full bg-white">
+            <AvatarMobile
+              src="/assets/img/speakers/speaker-3.avif"
+              name="James Rock"
+              pos="Founder & CEO"
+              com="Saudi Aramco"
+            />
+            <AvatarMobile
+              src="/assets/img/speakers/speaker-4.avif"
+              name="James Rock"
+              pos="Founder & CEO"
+              com="Saudi Aramco"
+            />
+          </div>
+        </div>
+        <!-- Item 3 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <div class="flex gap-[25px] w-full">
+            <AvatarMobile
+              src="/assets/img/speakers/speaker-2.avif"
+              name="James Rock"
+              pos="Founder & CEO"
+              com="Saudi Aramco"
+            />
+            <AvatarMobile
+              src="/assets/img/speakers/speaker-4.avif"
+              name="James Rock"
+              pos="Founder & CEO"
+              com="Saudi Aramco"
+            />
+          </div>
+        </div>
       </div>
+      <!-- Slider indicators -->
       <div
-        class="flex gap-[25px] w-full mt-[40px] mx-[23px] hidden"
-        id="secondDiv"
+        class="absolute z-30 flex -translate-x-1/2 space-x-3 rtl:space-x-reverse bottom-[-57px] left-1/2"
+        id="carouselIndicators"
       >
-        <AvatarMobile
-          src="/assets/img/speakers/speaker-3.avif"
-          name="James Rock"
-          pos="Founder & CEO"
-          com="Saudi Aramco"
-        />
-        <AvatarMobile
-          src="/assets/img/speakers/speaker-4.avif"
-          name="James Rock"
-          pos="Founder & CEO"
-          com="Saudi Aramco"
-        />
+        <button
+          type="button"
+          class="w-2 h-2 rounded-full bg-[#4081B3]"
+          aria-current="true"
+          aria-label="Slide 1"
+          data-carousel-slide-to="0"></button>
+        <button
+          type="button"
+          class="w-2 h-2 rounded-full bg-white/50"
+          aria-current="false"
+          aria-label="Slide 2"
+          data-carousel-slide-to="1"></button>
+        <button
+          type="button"
+          class="w-2 h-2 rounded-full bg-white/50"
+          aria-current="false"
+          aria-label="Slide 3"
+          data-carousel-slide-to="2"></button>
       </div>
     </div>
+
+    <!-- end -->
 
     <div
       class="pt-[100px] pb-[39px] md:py-[100px] px-[43px] flex justify-center"
@@ -109,3 +163,42 @@ import SubHeading from "../small-components/SubHeading.astro";
     </div>
   </div>
 </div>
+
+<script is:inline>
+  document.addEventListener("DOMContentLoaded", function () {
+    const carouselWrapper = document.getElementById("carouselWrapper");
+    const carouselIndicators = document.getElementById("carouselIndicators");
+
+    // Function to handle slide change
+    function goToSlide(index) {
+      // Hide all slides
+      const slides = carouselWrapper.querySelectorAll("[data-carousel-item]");
+      slides.forEach((slide) => slide.classList.add("hidden"));
+
+      // Show the selected slide
+      slides[index].classList.remove("hidden");
+
+      // Update active indicator button
+      const indicators = carouselIndicators.querySelectorAll("button");
+      indicators.forEach((indicator, i) => {
+        if (i === index) {
+          indicator.classList.add("bg-[#4081B3]");
+          indicator.classList.remove("bg-white/50");
+          indicator.setAttribute("aria-current", "true");
+        } else {
+          indicator.classList.remove("bg-[#4081B3]");
+          indicator.classList.add("bg-white/50");
+          indicator.setAttribute("aria-current", "false");
+        }
+      });
+    }
+
+    // Add event listeners to indicators
+    const indicators = carouselIndicators.querySelectorAll("button");
+    indicators.forEach((indicator, index) => {
+      indicator.addEventListener("click", function () {
+        goToSlide(index);
+      });
+    });
+  });
+</script>
