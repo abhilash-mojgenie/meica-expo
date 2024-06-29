@@ -59,69 +59,72 @@ import SubHeading from "../small-components/SubHeading.astro";
       />
     </div>
 
-    <!-- mobile -->
-    <div
-      class="relative w-full h-[300px] pt-[40px] px-[23px] md:hidden"
-      data-carousel="static"
-    >
-      <!-- Carousel wrapper -->
-      <div class="relative h-[300px] overflow-hidden" id="carouselWrapper">
-        <!-- Item 1 -->
-        <div
-          class="hidden duration-700 ease-in-out"
-          data-carousel-item="active"
-        >
-          <div class="flex gap-[25px] w-full bg-white">
-            <AvatarMobile
-              src="/assets/img/speakers/speaker-1.avif"
-              name="James Rock"
-              pos="Founder & CEO"
-              com="Saudi Aramco"
-            />
-            <AvatarMobile
-              src="/assets/img/speakers/speaker-2.avif"
-              name="James Rock"
-              pos="Founder & CEO"
-              com="Saudi Aramco"
-            />
+    <!-- strat mobile  -->
+    <div class="flex flex-col m-auto p-auto md:hidden relative">
+      <div class="flex overflow-x-scroll pt-[40px] scrollbar-hidden">
+        <div class="flex flex-nowrap justify-between">
+          <div class="inline-block px-[23px]">
+            <div
+              class="overflow-hidden w-max transition-shadow duration-300 ease-in-out"
+            >
+              <div class="flex gap-[25px] w-full">
+                <AvatarMobile
+                  src="/assets/img/speakers/speaker-1.avif"
+                  name="James Rock"
+                  pos="Founder & CEO"
+                  com="Saudi Aramco"
+                />
+                <AvatarMobile
+                  src="/assets/img/speakers/speaker-2.avif"
+                  name="James Rock"
+                  pos="Founder & CEO"
+                  com="Saudi Aramco"
+                />
+              </div>
+            </div>
           </div>
-        </div>
-        <!-- Item 2 -->
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-          <div class="flex gap-[25px] w-full bg-white">
-            <AvatarMobile
-              src="/assets/img/speakers/speaker-3.avif"
-              name="James Rock"
-              pos="Founder & CEO"
-              com="Saudi Aramco"
-            />
-            <AvatarMobile
-              src="/assets/img/speakers/speaker-4.avif"
-              name="James Rock"
-              pos="Founder & CEO"
-              com="Saudi Aramco"
-            />
+          <div class="inline-block px-[23px]">
+            <div
+              class="overflow-hidden w-max transition-shadow duration-300 ease-in-out"
+            >
+              <div class="flex gap-[25px] w-full">
+                <AvatarMobile
+                  src="/assets/img/speakers/speaker-3.avif"
+                  name="James Rock"
+                  pos="Founder & CEO"
+                  com="Saudi Aramco"
+                />
+                <AvatarMobile
+                  src="/assets/img/speakers/speaker-4.avif"
+                  name="James Rock"
+                  pos="Founder & CEO"
+                  com="Saudi Aramco"
+                />
+              </div>
+            </div>
           </div>
-        </div>
-        <!-- Item 3 -->
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-          <div class="flex gap-[25px] w-full">
-            <AvatarMobile
-              src="/assets/img/speakers/speaker-2.avif"
-              name="James Rock"
-              pos="Founder & CEO"
-              com="Saudi Aramco"
-            />
-            <AvatarMobile
-              src="/assets/img/speakers/speaker-4.avif"
-              name="James Rock"
-              pos="Founder & CEO"
-              com="Saudi Aramco"
-            />
+          <div class="inline-block px-[23px]">
+            <div
+              class="overflow-hidden w-max transition-shadow duration-300 ease-in-out"
+            >
+              <div class="flex gap-[25px] w-full">
+                <AvatarMobile
+                  src="/assets/img/speakers/speaker-1.avif"
+                  name="James Rock"
+                  pos="Founder & CEO"
+                  com="Saudi Aramco"
+                />
+                <AvatarMobile
+                  src="/assets/img/speakers/speaker-4.avif"
+                  name="James Rock"
+                  pos="Founder & CEO"
+                  com="Saudi Aramco"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <!-- Slider indicators -->
       <div
         class="absolute z-30 flex -translate-x-1/2 space-x-3 rtl:space-x-reverse bottom-[-57px] left-1/2"
         id="carouselIndicators"
@@ -163,41 +166,55 @@ import SubHeading from "../small-components/SubHeading.astro";
     </div>
   </div>
 </div>
-
 <script is:inline>
   document.addEventListener("DOMContentLoaded", function () {
-    const carouselWrapper = document.getElementById("carouselWrapper");
-    const carouselIndicators = document.getElementById("carouselIndicators");
+    const carouselWrapper = document.querySelector(".overflow-x-scroll");
+    const indicators = document.querySelectorAll("#carouselIndicators button");
 
-    // Function to handle slide change
-    function goToSlide(index) {
-      // Hide all slides
-      const slides = carouselWrapper.querySelectorAll("[data-carousel-item]");
-      slides.forEach((slide) => slide.classList.add("hidden"));
+    // Function to scroll to a specific slide
+    function scrollToSlide(index) {
+      const slideWidth = carouselWrapper.offsetWidth;
+      carouselWrapper.scrollTo({
+        left: index * slideWidth,
+        behavior: "smooth",
+      });
 
-      // Show the selected slide
-      slides[index].classList.remove("hidden");
-
-      // Update active indicator button
-      const indicators = carouselIndicators.querySelectorAll("button");
+      // Update indicators
       indicators.forEach((indicator, i) => {
         if (i === index) {
           indicator.classList.add("bg-[#4081B3]");
           indicator.classList.remove("bg-white/50");
           indicator.setAttribute("aria-current", "true");
         } else {
-          indicator.classList.remove("bg-[#4081B3]");
           indicator.classList.add("bg-white/50");
+          indicator.classList.remove("bg-[#4081B3]");
           indicator.setAttribute("aria-current", "false");
         }
       });
     }
 
     // Add event listeners to indicators
-    const indicators = carouselIndicators.querySelectorAll("button");
     indicators.forEach((indicator, index) => {
-      indicator.addEventListener("click", function () {
-        goToSlide(index);
+      indicator.addEventListener("click", () => {
+        scrollToSlide(index);
+      });
+    });
+
+    // Update indicators on scroll
+    carouselWrapper.addEventListener("scroll", () => {
+      const slideWidth = carouselWrapper.offsetWidth;
+      const currentSlide = Math.round(carouselWrapper.scrollLeft / slideWidth);
+
+      indicators.forEach((indicator, index) => {
+        if (index === currentSlide) {
+          indicator.classList.add("bg-[#4081B3]");
+          indicator.classList.remove("bg-white/50");
+          indicator.setAttribute("aria-current", "true");
+        } else {
+          indicator.classList.add("bg-white/50");
+          indicator.classList.remove("bg-[#4081B3]");
+          indicator.setAttribute("aria-current", "false");
+        }
       });
     });
   });
