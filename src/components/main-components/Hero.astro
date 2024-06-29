@@ -3,123 +3,119 @@ import CarrousalDiv from "../small-components/CarrousalDiv.astro";
 ---
 
 <div
-    id="default-carousel"
-    class="relative w-full hidden md:block h-[400px] lg:h-[450px] xl:h-[554px] 2xl:h-[563px]"
-    data-carousel="slide"
+  id="default-carousel"
+  class="relative w-full hidden md:block h-[400px] lg:h-[450px] xl:h-[554px] 2xl:h-[563px]"
+  data-carousel="slide"
 >
-    <!-- Carousel wrapper -->
-    <div
-        class="relative overflow-hidden h-[400px] lg:h-[450px] xl:h-[554px] 2xl:h-[563px]"
-    >
-        <!-- Item 1 -->
-        <div
-            class="h-full w-full duration-700 ease-in-out"
-            data-carousel-item=""
-        >
-            <CarrousalDiv
-                bg="bg-[url('/assets/img/png/meica-hero.png')]"
-                title="INSTRUMENTATION, CYBERSECURITY & AUTOMATION EXPO"
-                desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et"
-                btn1="Register now"
-                btn2="book a stand"
-                gradient="linear-gradient-hero"
-            />
-        </div>
-        <!-- Item 2 -->
-        <div class="h-full w-full duration-700 ease-in-out" data-carousel-item>
-            <CarrousalDiv
-                bg="bg-[url('/assets/img/jpg/application-programming.jpg')]"
-                title="INSTRUMENTATION, CYBERSECURITY & AUTOMATION EXPO"
-                desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et"
-                btn1="Register now"
-                btn2="book a stand"
-                gradient="custom-bg-gradient-1"
-            />
-        </div>
-        <!-- Item 3 -->
-        <div class="h-full w-full duration-700 ease-in-out" data-carousel-item>
-            <CarrousalDiv
-                bg="bg-[url('/assets/img/png/meica-hero.png')]"
-                title="INSTRUMENTATION, CYBERSECURITY & AUTOMATION EXPO"
-                desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et"
-                btn1="Register now"
-                btn2="book a stand"
-                gradient="custom-bg-gradient-2"
-            />
-        </div>
+  <!-- Carousel wrapper -->
+  <div
+    class="relative overflow-hidden h-[400px] lg:h-[450px] xl:h-[554px] 2xl:h-[563px]"
+  >
+    <div class="h-full w-full duration-1000 ease-in-out" data-carousel-item>
+      <CarrousalDiv
+        bg="bg-[url('/assets/img/png/meica-hero.png')]"
+        title="INSTRUMENTATION, CYBERSECURITY & AUTOMATION EXPO"
+        desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et"
+        btn1="Register now"
+        btn2="book a stand"
+        gradient="linear-gradient-hero"
+      />
     </div>
-    <!-- Slider indicators -->
-    <div
-        class="absolute z-30 flex bottom-[18px] left-[150px] xl:left-[200px] 2xl:left-[357px] space-x-3 rtl:space-x-reverse"
-    >
-        <button
-            type="button"
-            class="lg:w-3 lg:h-3 h-2 w-2 rounded-full"
-            aria-current="true"
-            aria-label="Slide 1"
-            data-carousel-slide-to="0"></button>
-        <button
-            type="button"
-            class="lg:w-3 lg:h-3 h-2 w-2 rounded-full bg-white/50"
-            aria-current="false"
-            aria-label="Slide 2"
-            data-carousel-slide-to="1"></button>
-        <button
-            type="button"
-            class="lg:w-3 lg:h-3 h-2 w-2 rounded-full bg-white/50"
-            aria-current="false"
-            aria-label="Slide 3"
-            data-carousel-slide-to="2"></button>
+    <!-- Item 2 -->
+    <div class="h-full w-full duration-1000 ease-in-out" data-carousel-item>
+      <CarrousalDiv
+        bg="bg-[url('https://img.freepik.com/free-photo/view-people-addicted-their-smartphone-looking-scrolling-through-screens_23-2151487207.jpg?t=st=1719661639~exp=1719665239~hmac=4d54768eda8a3efc9a7ddb4176d1310243df10f2e4da44b66e2067441cb1307a&w=740')]"
+        title="INSTRUMENTATION, CYBERSECURITY & AUTOMATION EXPO"
+        desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et"
+        btn1="Register now"
+        btn2="book a stand"
+        gradient="linear-gradient-hero"
+      />
     </div>
-    <!-- Slider controls -->
+    <!-- Item 3 -->
+    <div class="h-full w-full duration-1000 ease-in-out" data-carousel-item>
+      <CarrousalDiv
+        bg="bg-[url('https://img.freepik.com/free-photo/group-people-conference-vr-glasses-business-themes_1268-27776.jpg?t=st=1719662253~exp=1719665853~hmac=4008199af7433963e3c3d69e5b729e600ec9c0526df3caf5a9d20f6e10a37dd3&w=740')]"
+        title="INSTRUMENTATION, CYBERSECURITY & AUTOMATION EXPO"
+        desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et"
+        btn1="Register now"
+        btn2="book a stand"
+        gradient="linear-gradient-hero"
+      />
+    </div>
+  </div>
+  <!-- Slider indicators -->
+  <div
+    class="absolute z-30 flex bottom-[18px] left-[150px] xl:left-[200px] 2xl:left-[357px] space-x-3 rtl:space-x-reverse"
+  >
     <button
-        type="button"
-        class="absolute bottom-0 lg:w-[50px] lg:h-[50px] w-[30px] h-[30px] start-0 z-50 flex items-center justify-center bg-[#00CEB5] cursor-pointer group focus:outline-none"
-        data-carousel-prev
-    >
-        <span
-            class="inline-flex items-center justify-center lg:w-[50px] lg:h-[50px] w-[30px] h-[30px]"
-        >
-            <svg
-                class="lg:w-4 lg:h-4 w-3 h-3 text-white rtl:rotate-180"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 6 10"
-            >
-                <path
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M5 1 1 5l4 4"></path>
-            </svg>
-            <span class="sr-only">Previous</span>
-        </span>
-    </button>
+      type="button"
+      class="lg:w-3 lg:h-3 h-2 w-2 rounded-full"
+      aria-current="true"
+      aria-label="Slide 1"
+      data-carousel-slide-to="0"></button>
     <button
-        type="button"
-        class="absolute bg-[#00CEB5] bottom-0 end-0 z-50 lg:w-[50px] lg:h-[50px] w-[30px] h-[30px] flex items-center justify-center cursor-pointer group focus:outline-none"
-        data-carousel-next
+      type="button"
+      class="lg:w-3 lg:h-3 h-2 w-2 rounded-full bg-white/50"
+      aria-current="false"
+      aria-label="Slide 2"
+      data-carousel-slide-to="1"></button>
+    <button
+      type="button"
+      class="lg:w-3 lg:h-3 h-2 w-2 rounded-full bg-white/50"
+      aria-current="false"
+      aria-label="Slide 3"
+      data-carousel-slide-to="3"></button>
+  </div>
+  <!-- Slider controls -->
+  <button
+    type="button"
+    class="absolute bottom-0 lg:w-[50px] lg:h-[50px] w-[30px] h-[30px] start-0 z-50 flex items-center justify-center bg-[#00CEB5] cursor-pointer group focus:outline-none"
+    data-carousel-prev
+  >
+    <span
+      class="inline-flex items-center justify-center lg:w-[50px] lg:h-[50px] w-[30px] h-[30px]"
     >
-        <span
-            class="inline-flex items-center justify-center lg:w-[50px] lg:h-[50px] w-[30px] h-[30px] rounded-full"
-        >
-            <svg
-                class="lg:w-4 lg:h-4 w-3 h-3 text-white rtl:rotate-180"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 6 10"
-            >
-                <path
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="m1 9 4-4-4-4"></path>
-            </svg>
-            <span class="sr-only">Next</span>
-        </span>
-    </button>
+      <svg
+        class="lg:w-4 lg:h-4 w-3 h-3 text-white rtl:rotate-180"
+        aria-hidden="true"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 6 10"
+      >
+        <path
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M5 1 1 5l4 4"></path>
+      </svg>
+      <span class="sr-only">Previous</span>
+    </span>
+  </button>
+  <button
+    type="button"
+    class="absolute bg-[#00CEB5] bottom-0 end-0 z-50 lg:w-[50px] lg:h-[50px] w-[30px] h-[30px] flex items-center justify-center cursor-pointer group focus:outline-none"
+    data-carousel-next
+  >
+    <span
+      class="inline-flex items-center justify-center lg:w-[50px] lg:h-[50px] w-[30px] h-[30px] rounded-full"
+    >
+      <svg
+        class="lg:w-4 lg:h-4 w-3 h-3 text-white rtl:rotate-180"
+        aria-hidden="true"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 6 10"
+      >
+        <path
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="m1 9 4-4-4-4"></path>
+      </svg>
+      <span class="sr-only">Next</span>
+    </span>
+  </button>
 </div>
