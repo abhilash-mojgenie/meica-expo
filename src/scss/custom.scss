@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
 
 body {
-  font-family: "Outfit", sans-serif;
+    font-family: "Outfit", sans-serif;
 }
 // .indicator-active {
 //   background-color: white;
@@ -11,133 +11,135 @@ body {
 // }
 
 .angled-div {
-  position: relative;
-  clip-path: polygon(0 0, 100% 0, 70% 100%, 0% 100%);
+    position: relative;
+    clip-path: polygon(0 0, 100% 0, 70% 100%, 0% 100%);
 }
 .parallelogram {
-  transform: skew(-20deg);
+    transform: skew(-20deg);
 }
 .parallelogram-div-gradient {
-  transform: skew(-15deg);
+    transform: skew(-15deg);
 }
 .parallelogram-div {
-  transform: skew(-3deg);
-  clip-path: polygon(32% 0, 100% 0, 83% 100%, 6% 100%);
+    transform: skew(-3deg);
+    clip-path: polygon(32% 0, 100% 0, 83% 100%, 6% 100%);
 }
 .skew-fix {
-  display: inline-block;
-  transform: skew(20deg);
+    display: inline-block;
+    transform: skew(20deg);
 }
 .skew-fix-div {
-  display: inline-block;
-  transform: skew(3deg);
+    display: inline-block;
+    transform: skew(3deg);
 }
 .linear-gradient-hero {
-  background: linear-gradient(90deg, #417fb4 0%, #25a192 50.91%);
+    background: linear-gradient(90deg, #417fb4 0%, #25a192 50.91%);
 }
 .linear-gradient-keynote {
-  background: linear-gradient(180deg, #25a192 0%, #4180b4 100%);
+    background: linear-gradient(180deg, #25a192 0%, #4180b4 100%);
 }
 .linear-gradient-button {
-  background: linear-gradient(90deg, #4180b4 0%, #289d96 100%);
+    background: linear-gradient(90deg, #4180b4 0%, #289d96 100%);
 }
 .liner-gradient-about {
-  background: linear-gradient(114.4deg, #4180b4 0.7%, #25a192 98.79%);
+    background: linear-gradient(114.4deg, #4180b4 0.7%, #25a192 98.79%);
 }
 @font-face {
-  font-family: "Metropolis";
-  src: url("/assets/fonts/metropolis.regular.woff2"),
-    /* WOFF2 format */ url("/assets/fonts/metropolis.regular.woff");
+    font-family: "Metropolis";
+    src: url("/assets/fonts/metropolis.regular.woff2"),
+        /* WOFF2 format */ url("/assets/fonts/metropolis.regular.woff");
 }
 
 .metropolis-font {
-  font-family: "Metropolis", sans-serif;
+    font-family: "Metropolis", sans-serif;
 }
 
 .border-avatar-panellist {
-  position: relative;
-  border-radius: 20px; /* Apply the desired border radius */
-  background-clip: padding-box; /* Ensure the background clips correctly */
+    position: relative;
+    border-radius: 20px; /* Apply the desired border radius */
+    background-clip: padding-box; /* Ensure the background clips correctly */
 }
 
 .border-avatar-panellist::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  border-radius: 20px; /* Match the border radius */
-  padding: 3.5px; /* Adjust to match the border width */
-  background: linear-gradient(180deg, #25a192 0%, #4081b3 100%);
-  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-  -webkit-mask-composite: xor;
-  mask-composite: exclude;
-  pointer-events: none;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 20px; /* Match the border radius */
+    padding: 3.5px; /* Adjust to match the border width */
+    background: linear-gradient(180deg, #25a192 0%, #4081b3 100%);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
 }
 .border-sponsor {
-  position: relative;
-  border-radius: 20px; /* Apply the desired border radius */
-  background-clip: padding-box; /* Ensure the background clips correctly */
+    position: relative;
+    border-radius: 20px; /* Apply the desired border radius */
+    background-clip: padding-box; /* Ensure the background clips correctly */
 }
 
 .border-sponsor::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  border-radius: 20px; /* Match the border radius */
-  padding: 3.5px; /* Adjust to match the border width */
-  background: linear-gradient(180deg, #25a192 0%, #4081b3 100%);
-  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-  -webkit-mask-composite: xor;
-  mask-composite: exclude;
-  pointer-events: none;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 20px; /* Match the border radius */
+    padding: 3.5px; /* Adjust to match the border width */
+    background: linear-gradient(180deg, #25a192 0%, #4081b3 100%);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
 }
 .custom-gradient-hero-mobile {
-  background: linear-gradient(
-    133.14deg,
-    #4180b4 17.33%,
-    rgba(115, 115, 115, 0.44) 100.91%
-  );
+    background: linear-gradient(
+        133.14deg,
+        #4180b4 17.33%,
+        rgba(115, 115, 115, 0.44) 100.91%
+    );
 }
 .custom-gradient-hero-mobile-2 {
-  background: linear-gradient(
-    133.14deg,
-    #aaaaaa 17.33%,
-    /* Updated color */ rgba(255, 195, 113, 0.44) 100.91% /* Updated color */
-  );
+    background: linear-gradient(
+        133.14deg,
+        #4d89f1 17.33%,
+        /* Updated color */ rgba(0, 68, 255, 0.44) 100.91% /* Updated color */
+    );
 }
 .custom-gradient-hero-mobile-3 {
-  background: linear-gradient(
-    133.14deg,
-    #6a11cb 17.33%,
-    /* Updated color */ rgba(242, 153, 74, 0.44) 100.91% /* Updated color */
-  );
+    background: linear-gradient(
+        133.14deg,
+        #6a11cb 17.33%,
+        /* Updated color */ rgba(242, 153, 74, 0.44) 100.91% /* Updated color */
+    );
 }
 .custom-buttom-gradient-mobile {
-  background: linear-gradient(
-    0deg,
-    rgba(37, 161, 146, 0.83),
-    rgba(37, 161, 146, 0.83)
-  );
+    background: linear-gradient(
+        0deg,
+        rgba(37, 161, 146, 0.83),
+        rgba(37, 161, 146, 0.83)
+    );
 }
 .custom-bg-gradient-1 {
-  background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
+    background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
 }
 .custom-bg-gradient-2 {
-  background: linear-gradient(
-      to bottom,
-      rgba(255, 255, 255, 0.15) 0%,
-      rgba(0, 0, 0, 0.15) 100%
-    ),
-    radial-gradient(
-        at top center,
-        rgba(255, 255, 255, 0.4) 0%,
-        rgba(0, 0, 0, 0.4) 120%
-      )
-      #989898;
-  background-blend-mode: multiply, multiply;
+    background: linear-gradient(
+            to bottom,
+            rgba(255, 255, 255, 0.15) 0%,
+            rgba(0, 0, 0, 0.15) 100%
+        ),
+        radial-gradient(
+                at top center,
+                rgba(255, 255, 255, 0.4) 0%,
+                rgba(0, 0, 0, 0.4) 120%
+            )
+            #989898;
+    background-blend-mode: multiply, multiply;
 }
