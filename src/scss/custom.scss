@@ -103,6 +103,20 @@ body {
     rgba(115, 115, 115, 0.44) 100.91%
   );
 }
+.custom-gradient-hero-mobile-2 {
+  background: linear-gradient(
+    133.14deg,
+    #aaaaaa 17.33%,
+    /* Updated color */ rgba(255, 195, 113, 0.44) 100.91% /* Updated color */
+  );
+}
+.custom-gradient-hero-mobile-3 {
+  background: linear-gradient(
+    133.14deg,
+    #6a11cb 17.33%,
+    /* Updated color */ rgba(242, 153, 74, 0.44) 100.91% /* Updated color */
+  );
+}
 .custom-buttom-gradient-mobile {
   background: linear-gradient(
     0deg,
