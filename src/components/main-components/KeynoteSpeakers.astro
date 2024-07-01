@@ -31,7 +31,7 @@ import SubHeading from "../small-components/SubHeading.astro";
       class="absolute top-0 right-0"
     />
     <div
-      class="lg:pt-[100px] pt-[40px] gap-[25px] hidden w-full md:pt-[50px] xl:pt-[128px] md:px-1 2xl:pl-[81px] 2xl:pr-[161px] md:grid md:grid-cols-2 xl:grid-cols-4 z-10 md:gap-[30px] px-[23px]"
+      class="lg:pt-[100px] pt-[40px] gap-[25px] hidden w-full md:pt-[50px] xl:pt-[128px] md:px-1 2xl:pl-[81px] 2xl:pr-[161px] md:grid md:grid-cols-2 xl:grid-cols-4 z-10 md:gap-[30px] px-[13px]"
     >
       <Avatar
         src="/assets/img/speakers/speaker-1.avif"
@@ -64,11 +64,11 @@ import SubHeading from "../small-components/SubHeading.astro";
     <div class="flex flex-col m-auto p-auto md:hidden relative">
       <div class="flex overflow-x-scroll pt-[40px] scrollbar-hidden">
         <div class="flex flex-nowrap justify-between">
-          <div class="inline-block px-[23px]">
+          <div class="inline-block w-screen">
             <div
-              class="overflow-hidden w-max transition-shadow duration-300 ease-in-out"
+              class="overflow-hidden w-screen transition-shadow duration-300 ease-in-out"
             >
-              <div class="flex gap-[25px] w-full">
+              <div class="flex px-[15px] gap-[10px] justify-center w-full">
                 <AvatarMobile
                   src="/assets/img/speakers/speaker-1.avif"
                   name="James Rock"
@@ -84,11 +84,11 @@ import SubHeading from "../small-components/SubHeading.astro";
               </div>
             </div>
           </div>
-          <div class="inline-block px-[23px]">
+          <div class="inline-block w-screen">
             <div
-              class="overflow-hidden w-max transition-shadow duration-300 ease-in-out"
+              class="overflow-hidden w-screen transition-shadow duration-300 ease-in-out"
             >
-              <div class="flex gap-[25px] w-full">
+              <div class="flex px-[15px] gap-[10px] justify-center w-full">
                 <AvatarMobile
                   src="/assets/img/speakers/speaker-3.avif"
                   name="James Rock"
@@ -104,11 +104,11 @@ import SubHeading from "../small-components/SubHeading.astro";
               </div>
             </div>
           </div>
-          <div class="inline-block px-[23px]">
+          <div class="inline-block w-screen">
             <div
-              class="overflow-hidden w-max transition-shadow duration-300 ease-in-out"
+              class="overflow-hidden w-screen transition-shadow duration-300 ease-in-out"
             >
-              <div class="flex gap-[25px] w-full">
+              <div class="flex px-[15px] gap-[10px] justify-center w-full">
                 <AvatarMobile
                   src="/assets/img/speakers/speaker-1.avif"
                   name="James Rock"
@@ -177,7 +177,8 @@ import SubHeading from "../small-components/SubHeading.astro";
 
     // Function to scroll to a specific slide
     function scrollToSlide(index) {
-      const slideWidth = carouselWrapper.offsetWidth;
+      const slideWidth = window.innerWidth;
+      console.log("slidewidth =>", slideWidth);
       carouselWrapper.scrollTo({
         left: index * slideWidth,
         behavior: "smooth",
